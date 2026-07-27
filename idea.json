@@ -1,0 +1,9 @@
+{
+  "board_name": "SMDProtoBreakoutPanel",
+  "one_liner": "Ein universelles, per V-Cut ausbrechbares SMD-zu-THT Adapterpanel für 8 gängige SMD-Footprints auf 2,54mm-Breadboard-Raster.",
+  "market_gap": "Bastler scheuen oft SMD-Bauteile wegen der schwierigen Prototypisierung auf Breadboards. Dieses günstige, kombinierte All-in-One-Panel löst das Problem elegant und kostengünstig.",
+  "confidence": "high",
+  "price_eur": 12,
+  "target_enclosure": "Keines (Direkte Breadboard-Nutzung / 100x100mm Panel)",
+  "injection_notes": "keine"
+}
