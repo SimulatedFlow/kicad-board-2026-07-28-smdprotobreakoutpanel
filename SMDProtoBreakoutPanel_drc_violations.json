@@ -1,0 +1,147 @@
+{
+  "board": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-28-smdprotobreakoutpanel\\SMDProtoBreakoutPanel.kicad_pcb",
+  "timestamp": "2026-07-28T01:15:49",
+  "total_violations": 13,
+  "violation_counts": {
+    "lib_footprint_issues": 4,
+    "silk_overlap": 4,
+    "silk_over_copper": 5
+  },
+  "severity_counts": {
+    "error": 0,
+    "warning": 13,
+    "info": 0
+  },
+  "violations": [
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_3.2mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 95.0,
+        "y": 5.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_3.2mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 95.0,
+        "y": 95.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_3.2mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 5.0,
+        "y": 95.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Footprint \"MountingHole_3.2mm\" nicht in Bibliothek \"MountingHole\" gefunden.",
+      "location": {
+        "x": 5.0,
+        "y": 5.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning",
+      "message": "Silkscreen clearance",
+      "location": {
+        "x": 31.0,
+        "y": 83.57,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning",
+      "message": "Silkscreen clearance",
+      "location": {
+        "x": 44.0,
+        "y": 83.57,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning",
+      "message": "Silkscreen clearance",
+      "location": {
+        "x": 54.62,
+        "y": 82.92,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning",
+      "message": "Silkscreen clearance",
+      "location": {
+        "x": 69.0,
+        "y": 83.15,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 5.0,
+        "y": 95.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 2.54,
+        "y": 6.62,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 5.0,
+        "y": 5.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 95.0,
+        "y": 5.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 95.0,
+        "y": 95.0,
+        "unit": "mm"
+      }
+    }
+  ]
+}
