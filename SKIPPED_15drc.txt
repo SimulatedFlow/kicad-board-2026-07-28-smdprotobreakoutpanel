@@ -1,0 +1,8 @@
+ÜBERSPRUNGEN 2026-07-28 — SMDProtoBreakoutPanel
+Auto-Router konvergiert nicht: nach Build(89)→2 Fix-Runden(34)→--place-route→ noch 15 Fehler
+(7x tracks_crossing, 5x clearance, 2x shorting_items, 1 unconnected).
+Ursache: viele dichte Breakout-Segmente (SOIC-8/SOT-23/TQFP-32 fan-out auf THT) = zu dichte
+2-Pin-Netze pro Segment; Freerouting/MCP-Router kreuzt Bahnen + erzeugt Shorts.
+LEHRE: Breakout-Panels mit fein-pitch Footprints je eigenem Segment sind harte Topologie ->
+weniger Footprints/Panel, mehr Segment-Abstand, oder je Footprint EIN eigenes Mini-Board.
+Kein Fertigungspaket (Gate blockt), NICHT verkauft.

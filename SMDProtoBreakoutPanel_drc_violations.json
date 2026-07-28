@@ -1,20 +1,20 @@
 {
   "board": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-28-smdprotobreakoutpanel\\SMDProtoBreakoutPanel.kicad_pcb",
-  "timestamp": "2026-07-28T03:18:54",
-  "total_violations": 41,
+  "timestamp": "2026-07-28T04:17:01",
+  "total_violations": 38,
   "violation_counts": {
-    "tracks_crossing": 11,
-    "shorting_items": 6,
-    "clearance": 8,
-    "solder_mask_bridge": 2,
+    "tracks_crossing": 9,
+    "shorting_items": 5,
+    "clearance": 7,
+    "via_dangling": 3,
     "lib_footprint_issues": 4,
     "silk_overlap": 4,
     "silk_over_copper": 5,
     "copper_sliver": 1
   },
   "severity_counts": {
-    "error": 27,
-    "warning": 14,
+    "error": 21,
+    "warning": 17,
     "info": 0
   },
   "violations": [
@@ -31,20 +31,10 @@
     {
       "type": "shorting_items",
       "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S8_10 und S8_11)",
-      "location": {
-        "x": 89.975,
-        "y": 78.175,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
+      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S8_9 und S8_14)",
       "location": {
         "x": 91.7076,
-        "y": 68.2624,
+        "y": 76.1791,
         "unit": "mm"
       }
     },
@@ -53,198 +43,8 @@
       "severity": "error",
       "message": "Tracks crossing",
       "location": {
-        "x": 91.7076,
-        "y": 68.2624,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,0549 mm)",
-      "location": {
-        "x": 12.1,
-        "y": 29.1625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1145 mm)",
-      "location": {
-        "x": 12.9,
-        "y": 29.1625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,0750 mm)",
-      "location": {
-        "x": 14.5,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "shorting_items",
-      "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_26 und S1_23)",
-      "location": {
-        "x": 14.5,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 10.5,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 10.7916,
-        "y": 25.1977,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1049 mm)",
-      "location": {
-        "x": 11.3,
-        "y": 29.1625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "shorting_items",
-      "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_31 und S1_14)",
-      "location": {
-        "x": 10.5,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "shorting_items",
-      "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_12 und S1_30)",
-      "location": {
-        "x": 12.1,
-        "y": 29.1625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 17.5082,
-        "y": 21.3682,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 16.6625,
-        "y": 22.2,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1658 mm)",
-      "location": {
-        "x": 13.7,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "clearance",
-      "severity": "error",
-      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1754 mm)",
-      "location": {
-        "x": 16.6625,
-        "y": 22.2,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "shorting_items",
-      "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_22 und S1_18)",
-      "location": {
-        "x": 18.9524,
-        "y": 21.3747,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 11.9014,
-        "y": 25.1738,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 12.1,
-        "y": 29.1625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "shorting_items",
-      "severity": "error",
-      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_31 und S1_14)",
-      "location": {
-        "x": 10.5,
-        "y": 20.8375,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 8.3375,
-        "y": 27.0,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "tracks_crossing",
-      "severity": "error",
-      "message": "Tracks crossing",
-      "location": {
-        "x": 8.3375,
-        "y": 24.6,
+        "x": 5.0503,
+        "y": 23.4237,
         "unit": "mm"
       }
     },
@@ -269,22 +69,192 @@
       }
     },
     {
-      "type": "solder_mask_bridge",
+      "type": "shorting_items",
       "severity": "error",
-      "message": "R\u00fcckseitige L\u00f6tstopp\u00f6ffnung \u00fcber Elementen mit verschiedenen Netzen",
+      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_13 und S1_30)",
       "location": {
-        "x": 89.975,
-        "y": 78.175,
+        "x": 12.9,
+        "y": 29.1625,
         "unit": "mm"
       }
     },
     {
-      "type": "solder_mask_bridge",
+      "type": "clearance",
       "severity": "error",
-      "message": "R\u00fcckseitige L\u00f6tstopp\u00f6ffnung \u00fcber Elementen mit verschiedenen Netzen",
+      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1049 mm)",
+      "location": {
+        "x": 11.3,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 8.3375,
+        "y": 24.6,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "shorting_items",
+      "severity": "error",
+      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_12 und S1_30)",
+      "location": {
+        "x": 12.1,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 8.3375,
+        "y": 27.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,0868 mm)",
+      "location": {
+        "x": 17.5,
+        "y": 23.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1710 mm)",
+      "location": {
+        "x": 17.5082,
+        "y": 20.4539,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 18.0,
+        "y": 21.5,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 16.6625,
+        "y": 22.2,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 12.9,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 8.3375,
+        "y": 27.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "shorting_items",
+      "severity": "error",
+      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_7 und S1_31)",
+      "location": {
+        "x": 8.3375,
+        "y": 27.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "shorting_items",
+      "severity": "error",
+      "message": "Elemente, die zwei Netze kurzschlie\u00dfen (Netze S1_13 und S1_32)",
+      "location": {
+        "x": 12.9,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
+      "location": {
+        "x": 10.05,
+        "y": 31.69,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,1645 mm)",
+      "location": {
+        "x": 12.1,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Freiraum-Versto\u00df ( Freiraum 0,2000 mm; tats\u00e4chlich 0,0549 mm)",
+      "location": {
+        "x": 12.1,
+        "y": 29.1625,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "via_dangling",
+      "severity": "warning",
+      "message": "Via is not connected or connected on only one layer",
       "location": {
         "x": 16.6625,
         "y": 27.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "via_dangling",
+      "severity": "warning",
+      "message": "Via is not connected or connected on only one layer",
+      "location": {
+        "x": 16.6625,
+        "y": 23.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "via_dangling",
+      "severity": "warning",
+      "message": "Via is not connected or connected on only one layer",
+      "location": {
+        "x": 16.6625,
+        "y": 22.2,
         "unit": "mm"
       }
     },
@@ -421,7 +391,7 @@
     {
       "type": "copper_sliver",
       "severity": "warning",
-      "message": "Kupfersplitter (B.Cu)",
+      "message": "Kupfersplitter (F.Cu)",
       "location": {
         "x": 0,
         "y": 0,
