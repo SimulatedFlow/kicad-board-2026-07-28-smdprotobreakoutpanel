@@ -1,1 +1,12 @@
-The best-of-3 autoroute is still running (attempt 2 of 3). My background monitor `bifr03y08` is tracking the java processes and will re-invoke me automatically when all three freerouting attempts complete and the winning routed board is imported. I'll pick up there — verify all 87 nets are routed, run final DRC, and save. Waiting for that signal now.
+Board is complete and saved. Here's the honest summary:
+
+## Zusammenfassung – SMDProtoBreakoutPanel
+
+Das Board kam bereits zu ~95 % fertig an – der „unplatziert/ungeroutet"-Ausgangspunkt traf hier nur teilweise zu:
+
+- **Umriss:** OK. Sauberer 100×100 mm Edge.Cuts-Rechteck vorhanden (Extents −0.05→100.05), 4 M3-Ecklöcher gesetzt. Kein Neuanlegen nötig.
+- **Platzierung:** Alle 38 Bauteile lagen an den exakten Spec-Koordinaten – **kein Bauteil auf (0,0)**, nichts gestapelt, alles innerhalb der 8 Segmente. `suggest_placement` wäre kontraproduktiv gewesen (hätte die Spec-Anordnung zerstört) → bewusst übersprungen.
+- **4-Lagen/Planes:** Stackup war schon korrekt (F.Cu / In1.Cu id4 / In2.Cu id6 / B.Cu, In1/In2 als `power`-Typ). **Wichtige Abweichung, ehrlich gemeldet:** Dieses passive SMD→THT-Panel hat **kein GND- und kein Versorgungsnetz** – jedes Netz ist ein Segment-Durchreicher (S1_1…S8_16). Es gibt kein Netz, das man auf eine GND-/VCC-Plane legen könnte; die BUILD-PROMPT selbst definiert die Innenlagen als *isolierte, segmentierte Schirmflächen ohne globale Verbindung*. Die geforderten `add_zone(GND)/add_zone(VCC)` sind daher gegenstandslos – es wurden bewusst **keine Zonen** angelegt (query_zones=0). Die `power`-Innenlagen halten Freerouting-Signale ohnehin auf F/B.
+- **Routing:** 7 von 8 Segmenten waren geroutet; **Segment 5 (SC-70-6, U5→J8/J9) war komplett ungeroutet**. Autoroute übersprang genau diese Feinpitch-Bus-Umkehr. Ich habe Segment 5 **manuell** fertig geroutet: linker Fächer + Mitte gerade auf F.Cu, die beiden gekreuzten Außennetze (S5_4/S5_6) mit je 1 Via + B.Cu-L-Route sauber entkreuzt. **Nur F.Cu/B.Cu benutzt, keine Signale auf In1/In2** (Kontrolle: die 2 neuen Vias nur zum Lagenwechsel, keine Plane-Signalsegmente).
+- **DRC:** **0 Fehler**, 13 kosmetische Warnungen (4× MountingHole-Lib, 4× silk_overlap, 5× silk_over_copper) – die unveränderte Board-Baseline; mein Segment-5-Routing hat **null neue Verstöße** erzeugt.
+- **Speichern:** Die geroutete `.kicad_pcb` ist per `save_project(force:true)` auf Platte; der aus der gespeicherten Datei erzeugte Render bestätigt Segment 5. Fertig.
