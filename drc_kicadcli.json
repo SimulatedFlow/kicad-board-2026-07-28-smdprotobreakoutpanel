@@ -1,0 +1,405 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-27T01:43:22",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "SMDProtoBreakoutPanel.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [S1_18] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 16.6625,
+                        "y": 27.0
+                    },
+                    "uuid": "fca5e652-e4b7-4325-ba41-59ce142ce337"
+                },
+                {
+                    "description": "Durchsteckpad 2 [S1_18] von J2",
+                    "pos": {
+                        "x": 22.46,
+                        "y": 8.54
+                    },
+                    "uuid": "2c3126e4-2da2-4842-9c41-d473df7aa904"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S8_14] auf B.Cu, Länge 6,9105 mm",
+                    "pos": {
+                        "x": 89.975,
+                        "y": 73.095
+                    },
+                    "uuid": "5bd2cd2b-0919-4e19-8c5c-569b06a200f7"
+                },
+                {
+                    "description": "Leiterbahn [S8_13] auf B.Cu, Länge 4,3269 mm",
+                    "pos": {
+                        "x": 89.975,
+                        "y": 74.365
+                    },
+                    "uuid": "aee0c1ac-3fee-4ff5-9b7e-01f3c372942a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Elemente, die zwei Netze kurzschließen (Netze S8_9 und S8_14)",
+            "items": [
+                {
+                    "description": "Via [S8_9] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 91.7076,
+                        "y": 76.1791
+                    },
+                    "uuid": "3fb930b2-f4dd-4ce0-8707-9b3392fb506a"
+                },
+                {
+                    "description": "Leiterbahn [S8_14] auf B.Cu, Länge 6,9105 mm",
+                    "pos": {
+                        "x": 89.975,
+                        "y": 73.095
+                    },
+                    "uuid": "5bd2cd2b-0919-4e19-8c5c-569b06a200f7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_7] auf B.Cu, Länge 6,4210 mm",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 27.0
+                    },
+                    "uuid": "3a623770-24b1-4af2-944b-d8b29a076621"
+                },
+                {
+                    "description": "Leiterbahn [S1_31] auf B.Cu, Länge 23,0000 mm",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 26.0
+                    },
+                    "uuid": "beadcd1a-6f70-4ff1-9680-ecf5df0cc4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0702 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_3] auf B.Cu, Länge 11,3177 mm",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 23.8
+                    },
+                    "uuid": "6edfac0a-fcb1-4db8-8e97-60f87e9b4171"
+                },
+                {
+                    "description": "Leiterbahn [S1_4] auf B.Cu, Länge 9,8636 mm",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 24.6
+                    },
+                    "uuid": "9034f28c-c388-4a5d-80e6-4d913f8579fa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_4] auf B.Cu, Länge 9,8636 mm",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 24.6
+                    },
+                    "uuid": "9034f28c-c388-4a5d-80e6-4d913f8579fa"
+                },
+                {
+                    "description": "Leiterbahn [S1_14] auf B.Cu, Länge 7,6608 mm",
+                    "pos": {
+                        "x": 10.4673,
+                        "y": 18.0067
+                    },
+                    "uuid": "b10e01b7-6860-4c1f-a29b-e6a5112e0b57"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0202 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_4] auf B.Cu, Länge 9,8636 mm",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 24.6
+                    },
+                    "uuid": "9034f28c-c388-4a5d-80e6-4d913f8579fa"
+                },
+                {
+                    "description": "Via [S1_3] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.3375,
+                        "y": 23.8
+                    },
+                    "uuid": "d6324e45-f5a7-4570-9907-3f51265c42ff"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Elemente, die zwei Netze kurzschließen (Netze S1_13 und S1_30)",
+            "items": [
+                {
+                    "description": "Via [S1_13] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 29.1625
+                    },
+                    "uuid": "3cc52c73-937b-47cc-8d31-5b822772d533"
+                },
+                {
+                    "description": "Leiterbahn [S1_30] auf B.Cu, Länge 15,3560 mm",
+                    "pos": {
+                        "x": 22.46,
+                        "y": 39.02
+                    },
+                    "uuid": "ae8e244f-7d42-42bb-a37a-1031330c3aba"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_24] auf F.Cu, Länge 5,5902 mm",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 21.5
+                    },
+                    "uuid": "483ebc73-18d5-4e06-9239-56316e16dc59"
+                },
+                {
+                    "description": "Leiterbahn [S1_23] auf F.Cu, Länge 8,3815 mm",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 23.0
+                    },
+                    "uuid": "832c2f8a-945c-4c9d-99d5-cae9b14cd25a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_24] auf F.Cu, Länge 1,5096 mm",
+                    "pos": {
+                        "x": 16.6625,
+                        "y": 22.2
+                    },
+                    "uuid": "72338fdf-4fd4-4f52-819e-7f1e7543a706"
+                },
+                {
+                    "description": "Leiterbahn [S1_23] auf F.Cu, Länge 8,3815 mm",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 23.0
+                    },
+                    "uuid": "832c2f8a-945c-4c9d-99d5-cae9b14cd25a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0868 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_23] auf F.Cu, Länge 8,3815 mm",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 23.0
+                    },
+                    "uuid": "832c2f8a-945c-4c9d-99d5-cae9b14cd25a"
+                },
+                {
+                    "description": "Pad 24 [S1_24] von U1 auf F.Cu",
+                    "pos": {
+                        "x": 16.6625,
+                        "y": 22.2
+                    },
+                    "uuid": "a891a4d6-bd9f-41dc-938d-6fe0847473eb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_13] auf B.Cu, Länge 14,6212 mm",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 29.1625
+                    },
+                    "uuid": "9b26e014-1453-45bf-948c-f288b1cf4ca7"
+                },
+                {
+                    "description": "Leiterbahn [S1_31] auf B.Cu, Länge 23,0000 mm",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 26.0
+                    },
+                    "uuid": "beadcd1a-6f70-4ff1-9680-ecf5df0cc4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_12] auf B.Cu, Länge 12,3241 mm",
+                    "pos": {
+                        "x": 12.1,
+                        "y": 29.1625
+                    },
+                    "uuid": "56386a94-da23-4c85-9db8-d629a7f28038"
+                },
+                {
+                    "description": "Leiterbahn [S1_31] auf B.Cu, Länge 23,0000 mm",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 26.0
+                    },
+                    "uuid": "beadcd1a-6f70-4ff1-9680-ecf5df0cc4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_11] auf B.Cu, Länge 10,2063 mm",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 29.1625
+                    },
+                    "uuid": "08ae02f3-43f3-4fd7-b76b-1a689468fece"
+                },
+                {
+                    "description": "Leiterbahn [S1_31] auf B.Cu, Länge 23,0000 mm",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 26.0
+                    },
+                    "uuid": "beadcd1a-6f70-4ff1-9680-ecf5df0cc4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Elemente, die zwei Netze kurzschließen (Netze S1_12 und S1_30)",
+            "items": [
+                {
+                    "description": "Via [S1_12] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 12.1,
+                        "y": 29.1625
+                    },
+                    "uuid": "a988bbd3-db0a-4c6b-a1ef-898fd6f18058"
+                },
+                {
+                    "description": "Leiterbahn [S1_30] auf B.Cu, Länge 15,3560 mm",
+                    "pos": {
+                        "x": 22.46,
+                        "y": 39.02
+                    },
+                    "uuid": "ae8e244f-7d42-42bb-a37a-1031330c3aba"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Freiraum-Verstoß ( Freiraum 0,2000 mm; tatsächlich 0,0549 mm)",
+            "items": [
+                {
+                    "description": "Leiterbahn [S1_12] auf B.Cu, Länge 12,3241 mm",
+                    "pos": {
+                        "x": 12.1,
+                        "y": 29.1625
+                    },
+                    "uuid": "56386a94-da23-4c85-9db8-d629a7f28038"
+                },
+                {
+                    "description": "Via [S1_11] auf F.Cu - B.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 29.1625
+                    },
+                    "uuid": "5a9f2a37-8956-488d-bc00-368b88c615f5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}
